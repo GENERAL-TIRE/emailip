@@ -10,6 +10,13 @@ Incluye una **Interfaz Web (Panel de Control)** moderna desde la cual se puede v
 
 Para instalar y dejar corriendo este proyecto en una nueva computadora, simplemente abre la terminal y ejecuta los siguientes comandos:
 
+**0. Pre-requisitos (Instalar Node.js)**
+Si la computadora es completamente nueva y no tiene Node.js, instálalo corriendo estos dos comandos primero:
+```bash
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+sudo apt-get install -y nodejs
+```
+
 **1. Clonar el repositorio:**
 ```bash
 git clone git@github.com:GENERAL-TIRE/emailip.git
