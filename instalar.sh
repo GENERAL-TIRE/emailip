@@ -4,6 +4,17 @@ echo "============================================="
 echo "   Instalador del Monitor IP Llantas Regio   "
 echo "============================================="
 
+# 0. Verificar si Node.js y NPM están instalados
+if ! command -v npm &> /dev/null; then
+    echo "❌ ERROR: Node.js y NPM no están instalados en esta computadora."
+    echo "Para poder correr el servidor, primero instálalos con estos dos comandos:"
+    echo "1) curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -"
+    echo "2) sudo apt-get install -y nodejs"
+    echo ""
+    echo "Después de instalarlos, vuelve a correr: ./instalar.sh"
+    exit 1
+fi
+
 # 1. Asegurar que exista un archivo .env
 if [ ! -f .env ]; then
     echo "=> Creando archivo .env por defecto..."
